@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# useState prop and function passing
+
+Just a simple application with a star rating system and a modal using state
+
+[You can preview the deployment here](https://apricosma.github.io/rating-system/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
