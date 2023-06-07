@@ -9,15 +9,17 @@ const StarRating = () => {
 	};
 
 	return (
-		<div>
-			{/* underscore is a convention to denote an unused variable */}
-			{[...Array(5)].map((_, index) => {
-				return <Star
-					key={index}
-					isSelected={index < rating}
-					onClick={() => handleClick(index + 1)}
-				/>
-			})}
+		<div className='rating-wrapper'>
+			<div className='star-ratings'>
+				{/* underscore is a convention to denote an unused variable */}
+				{[...Array(5)].map((_, index) => {
+					return <Star
+						key={index}
+						isSelected={index < rating}
+						onClick={() => handleClick(index + 1)}
+					/>
+				})}
+			</div>
 		</div>
 	)
 }
