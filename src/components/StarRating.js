@@ -5,8 +5,15 @@ const StarRating = () => {
 	const [rating, setRating] = useState(0);
 
 	const handleClick = (selected) => {
+		if (selected === rating) {
+			setRating(0);
+			return;
+		}
+
 		setRating(selected);
 	};
+
+	const ratingText = ['Lacking', 'Okay', 'Good', 'Great', 'Excellent!'];
 
 	return (
 		<div className='rating-wrapper'>
@@ -20,6 +27,10 @@ const StarRating = () => {
 					/>
 				})}
 			</div>
+
+			<h2 className='rating-text'>
+				{rating === 0 ? 'Please rate this service' : ratingText[rating - 1]} 
+			</h2>
 		</div>
 	)
 }

@@ -9,14 +9,13 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
-  justify-items: center;
-  align-items: center;
   font-size: 48px;
 }
 
 .rating-wrapper{
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
